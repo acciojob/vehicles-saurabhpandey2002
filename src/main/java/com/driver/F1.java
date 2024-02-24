@@ -3,11 +3,10 @@ package com.driver;
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
-        //Use arbitrary values for parameters which are not mentioned
         super(name, 4, 2, 6, isManual, "Racing", 1);
     }
 
-    public void accelerate(int rate){
+    public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate;
         if (newSpeed == 0) {
             super.stop();
